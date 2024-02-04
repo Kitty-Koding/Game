@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatGoPurr</title>
+</head>
+<body>
+    <img id="ohnoes" src="https://lh3.googleusercontent.com/pw/ABLVV8610N_RJsZLc2ZHHIDLmkfoy1__DposNJvITKqM0ppRmJ1BP1f3FYL0Da68pkGCYDUimYu9u-5W-HaZIWNtGcTEsL-jLLBZ2LhZU_w0qahJ8Fyv3PQ54c0ZFTuK3I__i9JOwEPivILpHM-7a8mZ_6C6CQXvzOW-Yd6ditEnWAt-_UuTqPNvyqRH3E43ByG2GyrwYRl9rhbcNAJ-HhXtNcT2SEQDkWtwShSXnN_IC6GhOepyZfNb8XJ_66NUGrV1cdx_doMQdEEbb8N4Kib5_XGk5G5-LnVo1nE-5_-2AJUQ81Bc5gAmbCcRwVpgwVZOrcodLNcQjEoCMZSLZj-R0CBdFF0I4c6siLGVXE7z7nbmHoOYjKbpwnE7ET8c-3Xe_xtPlN_-ZHwXgWobVRxNLJ8nTXZ4oJPSwdReyVOWBVWWua3OKvW8o11fy4tBKZzRcLxxFIGwrs6BYZmse147HdhIbaOfKDJAmXihfsheGhWLuU3DxokTy16GyxMfsSsnIW5KO1ocSMaoshR1T6B3aWjvOKxeMtkFgZsGCY04Hng3GNlV7xkrwHenIE8JQfhjsx2v0NG_-QgtQi8ZLpHuRiBNm74NMwq6nroS2lKgiCZfTYHvIzVs5ykiqp-tBJBo5S48MrL9wSfI2nNR1Hz41NukJ9FXmhYVLR02ZALxKO9vWCFRrzRLY7JvcxhX_JEfZpMbip8CsZf7Ji666-mTCvhM7tcoe34ee9eBV4kLNpEB9DQ2Q5hIkALdxETIy7QNUhg-tzyllXTM2Bv1UKCal3Ij3-ph0YMxNpSelLuOQtGRImSJdR-hCT7eaBkGDiK6NCL3n-IQB7WVey6w-NFAvdG1Eg1WdFJtlLNfskkRURvofoShCgMGIFTNW6G5xMLBXNkNG1_qW-KsJxRL5MbneKlsjvjA9LrgokcGljF3MGgncfN21PqC7nqlZSEGXmQ=w1159-h869-s-no-gm?authuser=0">
+    <script>
+         var ohnoesEl = document.getElementById("ohnoes");
+        // Step 2: Define the event listener function
+        var onOhNoesClick = function(e) {
+            e.preventDefault();
+            var audioEl = document.createElement("audio");
+            audioEl.src = "https://www.kasandbox.org/programming-sounds/rpg/giant-no.mp3";
+            audioEl.autoplay = "true";
+            document.body.appendChild(audioEl);
+        };
+        // Step 3: Attach event listener to element
+        ohnoesEl.addEventListener("click", onOhNoesClick);
+    </script>
+</body>
+</html>
